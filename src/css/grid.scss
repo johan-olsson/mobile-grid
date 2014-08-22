@@ -1,0 +1,45 @@
+
+.grid {
+    max-width: 700px;
+    margin: 0 auto;
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.grid-item {
+    float: left;
+    box-sizing: border-box;
+    padding: 13px;
+
+    &.cols-1 {
+        width: 50%;
+    }
+    &.cols-2 {
+        width: 100%;
+    }
+    &.rows-1 {
+        height: 50%;
+    }
+    &.rows-2 {
+        height: 100%;
+    }
+    &.pull-right {
+        float: right;
+    }
+
+    img {
+        width: 100%;
+        -webkit-box-shadow: 0 0 10px #000;
+        -moz-box-shadow:    0 0 10px #000;
+        box-shadow:         0 0 10px #000;
+    }
+
+}

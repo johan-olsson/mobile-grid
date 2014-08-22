@@ -1,0 +1,17 @@
+{
+  "name": "mobile-grid",
+  "version": "0.0.0",
+  "authors": [
+    "Johan Olsson <johan.olsson@cherrygroup.com>"
+  ],
+  "description": "specific for cherry mobile grid",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
