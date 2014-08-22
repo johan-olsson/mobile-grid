@@ -9,19 +9,19 @@ module.exports = function(grunt) {
                     compass: true
                 },
                 files: {
-                    'grid.min.css': 'style/*.scss'
+                    'grid.min.css': 'src/**/*.scss'
                 }
             }
         },
         uglify: {
             js: {
                 files: {
-                    'grid.min.js': ['js/*!(min).js']
+                    'grid.min.js': ['src/**/*.js']
                 }
             }
         },
         watch: {
-            files: ['style/*.scss', 'js/*!(min).js'],
+            files: ['src/**/*'],
             tasks: ['sass', 'uglify']
         }
     });
